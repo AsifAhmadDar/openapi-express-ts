@@ -13,6 +13,9 @@
   "author": "Asif Dar",
   "license": "MIT",
   "description": "OpenAPI documentation generator for Express Typescript applications",
+  "repository": {
+    "url": "https://github.com/AsifAhmadDar/openapi-express-ts"
+  },
   "scripts": {
     "build": "tsc",
     "test": "jest",
