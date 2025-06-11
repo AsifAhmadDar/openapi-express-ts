@@ -37,7 +37,6 @@ Ensure your `tsconfig.json` has the following options enabled:
 ```typescript
 import { Controller, Get, Post } from 'openapi-express-ts';
 import express from 'express';
-import * as swaggerUi from 'swagger-ui-express';
 
 // Define your data types
 class User {
@@ -84,6 +83,8 @@ const apiDoc = generateOpenAPISpec({
     }
   ]
 });
+
+registerControllers(app, [UserController], apiDoc)
 
 ```
 
